@@ -14,3 +14,7 @@ std::string Zombie::getName() const
 {
 	return (name);
 }
+
+Zombie::~Zombie(){
+	std::cout << name << " is no longer here !" << std::endl;
+}

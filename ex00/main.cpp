@@ -2,8 +2,19 @@
 
 int main()
 {
-	Zombie z;
+	Zombie		*z;
+	std::string	zombieName;
+	std::string chumpName;
 
-	z.setName("Foo");
-	z.announce();
+	std::cout << "Enter zombie name :" << std::endl;
+	std::cin >> zombieName;
+
+	std::cout << "Enter chump name :" << std::endl;
+	std::cin >> chumpName;
+
+	z = newZombie(zombieName);
+	z->announce();
+	delete z;
+	
+	randomChump(chumpName);
 }

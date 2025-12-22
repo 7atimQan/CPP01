@@ -13,6 +13,7 @@ int main()
 	std::cin >> chumpName;
 
 	z = newZombie(zombieName);
+	
 	z->announce();
 	delete z;
 	

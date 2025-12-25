@@ -7,6 +7,8 @@ int	main()
 
 	std::cout << "Enter the number of zombies :" << std::endl;
 	std::cin >> N;
+	if (N < 0)
+		return 1;
 
 	std::cout << "Enter the name of each zombie :" << std::endl;
 	std::cin >> name;

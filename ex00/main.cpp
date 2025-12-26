@@ -3,8 +3,7 @@
 int main()
 {
 	Zombie		*z;
-	std::string	zombieName;
-	std::string chumpName;
+	 
 
 	std::cout << "Enter zombie name :" << std::endl;
 	std::cin >> zombieName;
